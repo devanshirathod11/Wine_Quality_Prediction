@@ -1,32 +1,31 @@
-# Wine_Quality_Prediction
-## Machine Learning model to predict the quality of wine using linear regression.
-Description:
-This datasets is related to red variants of the Portuguese "Vinho Verde" wine.The dataset describes the amount of various chemicals present in wine and their effect on it's quality. The datasets can be viewed as classification or regression tasks. The classes are ordered and not balanced (e.g. there are much more normal wines than excellent or poor ones).Your task is to predict the quality of wine using the given data.
+# Wine Quality Prediction
 
-A simple yet challenging project, to anticipate the quality of wine.
-The complexity arises due to the fact that the dataset has fewer samples, & is highly imbalanced.
+A machine-learning project exploring wine-quality prediction from physicochemical measurements.
 
-This data frame contains the following columns:
+## Problem
 
-Input variables (based on physicochemical tests):\
-1 - fixed acidity\
-2 - volatile acidity\
-3 - citric acid\
-4 - residual sugar\
-5 - chlorides\
-6 - free sulfur dioxide\
-7 - total sulfur dioxide\
-8 - density\
-9 - pH\
-10 - sulphates\
-11 - alcohol\
-Output variable (based on sensory data):\
-12 - quality (score between 0 and 10)
+The dataset concerns red variants of Portuguese *Vinho Verde* wine. Input features include acidity measures, residual sugar, chlorides, sulfur dioxide, density, pH, sulphates, and alcohol. The target is the recorded quality score.
 
-Acknowledgements:
--This dataset is also available from Kaggle & UCI machine learning repository, https://archive.ics.uci.edu/ml/datasets/wine+quality.
+## Modeling approach
 
-Objective:
-- Understand the Dataset & cleanup (if required).
-- Build classification models to predict the wine quality.
-- Also fine-tune the hyperparameters & compare the evaluation metrics of various classification algorithms.
+Wine quality can be framed as either a regression task (predicting a numeric score) or a classification task (predicting quality categories). The model type and evaluation metrics should match the task selected in the implementation.
+
+A sound workflow includes:
+
+1. Inspect the dataset, target distribution, and class imbalance.
+2. Validate missing values, duplicates, and feature ranges.
+3. Create a reproducible train/test split.
+4. Establish a simple baseline.
+5. Compare appropriate models and tune hyperparameters using training data only.
+6. Report suitable metrics and error analysis on held-out data.
+
+## Dataset reference
+
+The repository's original description points to the UCI Machine Learning Repository's Wine Quality dataset:
+https://archive.ics.uci.edu/dataset/186/wine+quality
+
+Please check the dataset's current terms and cite the exact source/version used in the experiment.
+
+## Reproducibility
+
+Add the verified dataset path, dependency versions, notebook/script entry point, execution commands, and actual evaluation results after checking them against the code. No performance metrics are claimed in this README.
